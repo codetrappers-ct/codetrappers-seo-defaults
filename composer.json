@@ -1,5 +1,5 @@
 {
-  "name": "coetrappers/coetrappers-seo-defaults",
+  "name": "codetrappers/codetrappers-seo-defaults",
   "description": "Starter plugin for default metadata and indexing rules.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Coetrappers\\\\CoetrappersSeoDefaults\\\\": "includes/"
+      "Codetrappers\\\\CodetrappersSeoDefaults\\\\": "includes/"
     }
   }
 }

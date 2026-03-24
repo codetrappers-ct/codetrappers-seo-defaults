@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersSeoDefaults;
+namespace Codetrappers\CodetrappersSeoDefaults;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersSeoDefaultsPlugin {
-	const OPTION_KEY = 'coetrappers-seo-defaults_settings';
+class CodetrappersSeoDefaultsPlugin {
+	const OPTION_KEY = 'codetrappers-seo-defaults_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersSeoDefaultsPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-seo-defaults_status',
+			'_codetrappers-seo-defaults_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersSeoDefaultsPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-seo-defaults' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-seo-defaults' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersSeoDefaultsPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers SEO Defaults starter is active. Extend the bootstrap logic in includes/class-coetrappers-seo-defaults.php.', 'coetrappers-seo-defaults' )
+			esc_html__( 'Codetrappers SEO Defaults starter is active. Extend the bootstrap logic in includes/class-codetrappers-seo-defaults.php.', 'codetrappers-seo-defaults' )
 		);
 	}
 }

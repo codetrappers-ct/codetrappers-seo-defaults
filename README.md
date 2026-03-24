@@ -1,12 +1,12 @@
-# Coetrappers SEO Defaults
+# Codetrappers SEO Defaults
 
-`coetrappers-seo-defaults` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-seo-defaults` is a wordpress plugin for the Codetrappers project set.
 Starter plugin for default metadata and indexing rules.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-seo-defaults`
+- Slug: `codetrappers-seo-defaults`
 - Type: WordPress plugin
 - Focus: seo, metadata, schema
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-seo-defaults` from the Plugins screen.
-- Use `coetrappers-seo-defaults.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-seo-defaults` from the Plugins screen.
+- Use `codetrappers-seo-defaults.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes
